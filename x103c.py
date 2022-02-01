@@ -1,5 +1,16 @@
 #!python3
 
+def getData(): 
+ a_file = open("data.csv", "r")
+ list_of_lists = [(line.strip()).split() for line in a_file]
+ a_file.close()
+ return str(list_of_lists)
+
+x = getData()
+index = x.index(input('Enter Index Item Number'))
+print(index)
+
+
 """
 You will need to search through the document and find information that is being searched for by the user.
 Search for the Equipment Item Number
@@ -13,10 +24,8 @@ Add the line to a list for later analysis.
 
 For each item in your list, display the relevant information for the line.
 
-"""
-
 def findSerial(needle):
-    """
+    
     input: 
     str needle: This is the string to look for
     
@@ -24,7 +33,7 @@ def findSerial(needle):
     str: Serial number if there is only 1match
     list: list of str serial numbers if there are multiple matches
     None if no matches
-    """
+    
     filename = "data.csv"
     
     
@@ -37,5 +46,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-        
+"""
 

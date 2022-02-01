@@ -1,7 +1,16 @@
 #!python3
 
+<<<<<<< HEAD
 def getData(x):
   return str(x)
+=======
+def getData(): 
+ f = open("data.csv", "r")
+ return str((f.read()))
+
+x = getData()
+print(x)
+>>>>>>> 44025dd4e921d4e157b0e503b3c3a8cf2d83d34e
 
 """
 Create a function called getData()
@@ -23,3 +32,7 @@ def main():
 if __name__ == "__main__":
     main()
 """
+<<<<<<< HEAD
+=======
+
+>>>>>>> 44025dd4e921d4e157b0e503b3c3a8cf2d83d34e
