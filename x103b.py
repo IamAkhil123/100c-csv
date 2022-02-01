@@ -1,9 +1,5 @@
 #!python3
 
-<<<<<<< HEAD
-def getdata():
- 
-=======
 def getData(): 
  a_file = open("data.csv", "r")
  list_of_lists = [(line.strip()).split() for line in a_file]
@@ -12,7 +8,6 @@ def getData():
 
 x = getData()
 print(x)
->>>>>>> 44025dd4e921d4e157b0e503b3c3a8cf2d83d34e
 
 """
 Create a function called getData()

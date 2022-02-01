@@ -1,17 +1,10 @@
 #!python3
 
-<<<<<<< HEAD
-def getData(x):
-  return str(x)
-=======
-def getData(): 
- f = open("data.csv", "r")
- return str((f.read()))
-
-x = getData()
-print(x)
->>>>>>> 44025dd4e921d4e157b0e503b3c3a8cf2d83d34e
-
+def getData():
+ file = open("data.csv", "r")
+ file.read()
+  
+getData()
 """
 Create a function called getData()
 getData takes no input parameters
@@ -32,7 +25,3 @@ def main():
 if __name__ == "__main__":
     main()
 """
-<<<<<<< HEAD
-=======
-
->>>>>>> 44025dd4e921d4e157b0e503b3c3a8cf2d83d34e
